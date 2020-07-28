@@ -1,4 +1,4 @@
-import libcmark
+import cmark_gfm
 
 extension String {
     init?(_ buffer: cmark_strbuf) {

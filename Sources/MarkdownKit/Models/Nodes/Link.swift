@@ -1,4 +1,4 @@
-import libcmark
+import cmark_gfm
 import Foundation
 
 public class Link: Node {

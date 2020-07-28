@@ -8,10 +8,12 @@ let package = Package(
     products: [
         .library(name: "MarkdownKit", targets: ["MarkdownKit"])
     ],
+    dependencies: [
+        .package(name: "cmark_gfm", url: "https://github.com/hebertialmeida/swift-cmark-gfm", .upToNextMajor(from: "1.0.0"))
+    ],
     targets: [
-        .target(name: "libcmark"),
         .target(name: "MarkdownKitObjC"),
-        .target(name: "MarkdownKit", dependencies: ["libcmark", "MarkdownKitObjC"]),
+        .target(name: "MarkdownKit", dependencies: ["cmark_gfm", "MarkdownKitObjC"]),
         .testTarget(name: "MarkdownKitTests", dependencies: ["MarkdownKit"])
     ],
     swiftLanguageVersions: [.v5]

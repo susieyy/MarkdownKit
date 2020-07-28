@@ -1,4 +1,4 @@
-import libcmark
+import cmark_gfm
 
 public final class HTMLRenderer {
     public enum Error: Swift.Error {

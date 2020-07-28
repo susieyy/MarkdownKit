@@ -1,4 +1,4 @@
-import libcmark
+import cmark_gfm
 
 public typealias Kind = cmark_node_type
 
