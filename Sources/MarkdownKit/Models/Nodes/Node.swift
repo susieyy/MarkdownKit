@@ -1,5 +1,5 @@
 import Foundation
-import cmark_gfm
+import libcmark_gfm
 
 public class Node {
 

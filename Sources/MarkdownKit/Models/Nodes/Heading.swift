@@ -1,4 +1,4 @@
-import cmark_gfm
+import libcmark_gfm
 
 public final class Heading: Node {
 
